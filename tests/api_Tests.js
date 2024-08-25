@@ -14,6 +14,7 @@ const request = supertest(BASE_URL);
 
 // Deskripsi test suite untuk API Reqres
 describe('Reqres API Automation Tests', () => {
+   // Test case untuk HTTP GET request
   it('Sample GET Request', async () => {
     const response = await request.get('/users/2');
     expect(response.status).to.equal(200);
